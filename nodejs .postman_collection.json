@@ -1,0 +1,61 @@
+{
+	"info": {
+		"name": "nodejs ",
+		"_postman_id": "1cae7872-f818-262e-cac6-754d950fe992",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "nodejs-jwt-example",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\" : \"login\",\n\"password\" :123 \n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/authentificate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authentificate"
+					]
+				},
+				"description": "post request to test authentification process "
+			},
+			"response": []
+		},
+		{
+			"name": "get All Prducts Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/getAllProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getAllProducts"
+					]
+				},
+				"description": "get All Prducts REquest through api prefix"
+			},
+			"response": []
+		}
+	]
+}
