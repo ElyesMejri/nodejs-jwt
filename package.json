@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-api-jwt",
+  "version": "1.0.0",
+  "description": " node JS Api simple example with JWT  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElyesMejri/nodejs-jwt.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "jwt"
+  ],
+  "author": "Elyes MEJRI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElyesMejri/nodejs-jwt/issues"
+  },
+  "homepage": "https://github.com/ElyesMejri/nodejs-jwt#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "morgan": "^1.9.0"
+  }
+}
