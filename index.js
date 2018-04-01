@@ -1,7 +1,20 @@
+
+
+//Express : the famous node js framework   
 const express = require('express'),
+//body-parser: allow us to get the data from the body of the requests
 bodyParser = require('body-parser'),
+//morgan : logs the requests in the console
 morgan      = require('morgan'),
+//jsonwebtoken : the package that allows us to generate jwt and build our middleware to check whether the token is valid or not .
 jwt    = require('jsonwebtoken'),
+
+/**
+ * well accually this file is used to setup some configurations that most users need to do in order to better organise their projects.
+   They can setup configuration for databases or for other purposes ,
+   In our case we are going to use this file to setup our secret which will be used when creating our jwt so the file should look like this
+ */
+
 config = require('./configurations/config'),
 app = express(); 
 
@@ -59,8 +72,9 @@ app.post('/authenticate',(req,res)=>{
     }
 
 });
-const  ProtectedRoutes = express.Router(); 
 
+
+const  ProtectedRoutes = express.Router(); 
 app.use('/api', ProtectedRoutes);
 
 
